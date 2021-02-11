@@ -1,0 +1,23 @@
+{
+    "dataset": "mtgp",
+    "x_dim": 6,
+    "y_dim": 1,
+    "batch_size": 20,
+    "set_size": 5,
+    "model": "fns_acidp",
+    "latent_encoder_hidden": [256,256,256,256],
+    "latent_dim": 256,
+    "attn_value_hids": [256,256,256,256],
+    "attn_key_hids": [256,256],
+    "attn_dim": 256,
+    "generator_hidden": [256,256,256,256],
+    "epochs": 1000,
+    "optimizer": "adam",
+    "lr": 0.0001,
+    "decay_steps": 100000,
+    "decay_rate": 0.5,
+    "clip_gradient": 1,
+    "exp_dir": "./exp/gp/idp",
+    "summ_freq": 100,
+    "eval_metrics": ["fns"]
+}
